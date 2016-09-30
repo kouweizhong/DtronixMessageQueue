@@ -85,6 +85,11 @@
     <Compile Include="Socket\SocketMode.cs" />
     <Compile Include="Socket\SocketServer.cs" />
     <Compile Include="Socket\SocketSession.cs" />
+    <Compile Include="ThreadPool\IMqThreadPoolWorkGroup.cs" />
+    <Compile Include="ThreadPool\MqThreadPool.cs" />
+    <Compile Include="ThreadPool\MqThreadPoolConfig.cs" />
+    <Compile Include="ThreadPool\MqThreadPoolThread.cs" />
+    <Compile Include="ThreadPool\MqThreadPoolWorkItem.cs" />
     <Compile Include="Utilities.cs" />
     <Content Include="DtronixMessageQueue.nuspec">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
