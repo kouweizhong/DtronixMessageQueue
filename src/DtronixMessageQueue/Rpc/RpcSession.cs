@@ -86,11 +86,11 @@ namespace DtronixMessageQueue.Rpc {
 			// Determine if this session is running on the server or client to retrieve the worker thread pool.
 			if (BaseSocket.Mode == SocketMode.Server) {
 				Server = (RpcServer<TSession, TConfig>) BaseSocket;
-				WorkerThreadPool = Server.WorkerThreadPool;
+				WorkerThreadPool = Server.WorkerThreadPool.CreateWorkItemsGroup(Config.MaxSessionConcurrency);
 
 			} else {
 				Client = (RpcClient<TSession, TConfig>) BaseSocket;
-				WorkerThreadPool = Client.WorkerThreadPool;
+				WorkerThreadPool = Client.WorkerThreadPool.CreateWorkItemsGroup(Config.MaxSessionConcurrency);
 			}
 
 			SerializationCache = new SerializationCache(Config);

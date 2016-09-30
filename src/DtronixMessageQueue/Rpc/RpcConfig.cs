@@ -11,9 +11,9 @@ namespace DtronixMessageQueue.Rpc {
 	public class RpcConfig : MqConfig {
 
 		/// <summary>
-		/// Number of threads used for executing RPC calls.
+		/// Number of threads used for executing RPC calls on the server/client.
 		/// </summary>
-		public int MaxExecutionThreads { get; set; } = 10;
+		public int MaxExecutionThreads { get; set; } = 100;
 
 		/// <summary>
 		/// Number of threads each session is allowed to use at a time from the main thread pool.
