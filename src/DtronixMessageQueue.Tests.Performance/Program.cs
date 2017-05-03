@@ -28,6 +28,11 @@ namespace DtronixMessageQueue.Tests.Performance {
 						new MqPerformanceTest(args);
 						break;
 
+					case "mq-breakdown":
+						Console.WriteLine("Running MQ performance tests.\r\n");
+						new MqBreakdownPerformanceTest(args);
+						break;
+
 					default:
 						Console.WriteLine("Running RPC performance tests.\r\n");
 						new RpcPerformanceTest(args);
@@ -41,5 +46,4 @@ namespace DtronixMessageQueue.Tests.Performance {
 		
 
 	}
-
 }

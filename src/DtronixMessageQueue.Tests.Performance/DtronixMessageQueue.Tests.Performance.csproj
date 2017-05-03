@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleCopy.cs" />
+    <Compile Include="MqBreakdownPerformanceTest.cs" />
     <Compile Include="MqPerformanceTest.cs" />
+    <Compile Include="MqTest.cs" />
     <Compile Include="PerformanceTestBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
